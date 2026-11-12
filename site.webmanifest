@@ -1,0 +1,27 @@
+{
+  "name": "خودکار — مشاور اتوماسیون کسب‌وکار",
+  "short_name": "خودکار",
+  "description": "شریک اجرایی شما برای رسیدن به اولین درآمد. مشاوره استراتژی، طراحی MVP و اتوماسیون کسب‌وکار با هوش مصنوعی.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1e4e79",
+  "background_color": "#ffffff",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

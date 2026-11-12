@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آموزش اتوماسیون با هوش مصنوعی | راهنمای عملی از صفر تا اولین پروژه (۱۴۰۵)</title>
+<meta name="description" content="آموزش اتوماسیون با هوش مصنوعی به زبان ساده: مقایسه n8n، Make و Power Automate + نقشه راه ۴ گامی + ۳ پروژه عملی برای شروع.">
+<meta name="keywords" content="آموزش اتوماسیون با هوش مصنوعی, اتوماسیون با هوش مصنوعی, آموزش n8n, آموزش Make, اتوماسیون فرآیندها با AI, یادگیری اتوماسیون هوشمند">
+<meta name="author" content="علیرضا محمّدی جعفری">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://khodkar.hsc-co.ir/ai-automation-training-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="آموزش اتوماسیون با هوش مصنوعی | راهنمای عملی از صفر تا اولین پروژه">
+<meta property="og:description" content="مقایسه n8n، Make و Power Automate + نقشه راه ۴ گامی + ۳ پروژه عملی برای شروع اتوماسیون هوشمند.">
+<meta property="og:url" content="https://khodkar.hsc-co.ir/ai-automation-training-guide.html">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:site_name" content="خودکار">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "آموزش اتوماسیون با هوش مصنوعی: راهنمای عملی از صفر تا اولین پروژه (۱۴۰۵)",
+      "description": "راهنمای کامل آموزش اتوماسیون با هوش مصنوعی شامل مقایسه ابزارها (n8n، Make، Power Automate)، نقشه راه یادگیری گام‌به‌گام و ۳ پروژه عملی برای شروع.",
+      "author": {"@type":"Person","name":"علیرضا محمّدی جعفری","url":"https://khodkar.hsc-co.ir/about.html"},
+      "publisher": {"@type":"Organization","name":"خودکار","url":"https://khodkar.hsc-co.ir/"},
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-12",
+      "mainEntityOfPage": "https://khodkar.hsc-co.ir/ai-automation-training-guide.html",
+      "inLanguage": "fa-IR"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"برای آموزش اتوماسیون با هوش مصنوعی از کجا شروع کنم؟","acceptedAnswer":{"@type":"Answer","text":"با یک ابزار No-Code مثل Make یا n8n شروع کنید. دوره Quickstart رایگان n8n در ۳ تا ۵ ساعت شما را از صفر به ساخت اولین Workflow و AI Agent می‌رساند. برای شروع، نیازی به برنامه‌نویسی نیست."}},
+        {"@type":"Question","name":"بهترین ابزار برای یادگیری اتوماسیون هوشمند کدام است؟","acceptedAnswer":{"@type":"Answer","text":"اگر در ایران هستید و می‌خواهید رایگان و روی سرور خودتان کار کنید: n8n (متن‌باز و رایگان). اگر می‌خواهید سریع و بدون پیچیدگی شروع کنید: Make (رابط بصری ساده‌تر). اگر در اکوسیستم مایکروسافت هستید: Power Automate."}},
+        {"@type":"Question","name":"آیا برای اتوماسیون با هوش مصنوعی باید برنامه‌نویسی بلد باشم؟","acceptedAnswer":{"@type":"Answer","text":"خیر. ابزارهای No-Code مثل Make و n8n امکان ساخت Workflow با کشیدن و رها کردن (Drag & Drop) را می‌دهند. البته آشنایی پایه با API و JSON کمک‌کننده است، اما اجباری نیست."}},
+        {"@type":"Question","name":"اولین پروژه اتوماسیون هوشمند چه چیزی باشد؟","acceptedAnswer":{"@type":"Answer","text":"یک پروژه ساده و کاربردی انتخاب کنید: ۱) خلاصه‌سازی خودکار ایمیل‌ها با AI و ارسال به تلگرام ۲) دسته‌بندی پیام‌های مشتری و پاسخ خودکار ۳) تولید گزارش فروش از Google Sheets با تحلیل AI. این پروژه‌ها در چند ساعت قابل ساخت هستند."}},
+        {"@type":"Question","name":"چقدر زمان می‌برد تا بتوانم اتوماسیون هوشمند بسازم؟","acceptedAnswer":{"@type":"Answer","text":"با یک دوره Quickstart مثل n8n (۳ تا ۵ ساعت)، می‌توانید اولین Workflow ساده و حتی یک AI Agent پایه بسازید. برای تسلط بر پروژه‌های پیچیده‌تر، معمولاً ۲ تا ۴ هفته تمرین منظم کافی است."}},
+        {"@type":"Question","name":"آیا اتوماسیون هوشمند برای کسب‌وکار کوچک هم ارزش دارد؟","acceptedAnswer":{"@type":"Answer","text":"بله. اتوماسیون کارهای تکراری (پاسخ به مشتری، پیگیری سفارش، گزارش‌گیری) زمان شما را آزاد می‌کند و خطا را کاهش می‌دهد. با n8n رایگان یا Make پلن رایگان می‌توانید بدون هزینه شروع کنید."}}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"خانه","item":"https://khodkar.hsc-co.ir/"},
+        {"@type":"ListItem","position":2,"name":"آموزش اتوماسیون با هوش مصنوعی","item":"https://khodkar.hsc-co.ir/ai-automation-training-guide.html"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="خودکار - صفحه اصلی">
+      <img src="logo.png" alt="خودکار" class="logo-img">
+    </a>
+    <nav aria-label="منوی اصلی">
+      <ul class="nav">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="services.html">خدمات</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="contact.html">تماس</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn-primary header-cta">جلسه رایگان</a>
+    <button class="menu-toggle" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+
+<nav class="breadcrumb container" aria-label="مسیر صفحه">
+  <a href="index.html">خانه</a> <span>›</span> <span>آموزش اتوماسیون با هوش مصنوعی</span>
+</nav>
+
+<section class="hero hero-sm">
+  <div class="container">
+    <h1>آموزش اتوماسیون با هوش مصنوعی:<br><span class="accent">از صفر تا اولین پروژه عملی</span></h1>
+    <p class="lead">بدون نیاز به برنامه‌نویسی. اینجا یاد می‌گیرید کدام ابزار را انتخاب کنید، از کجا شروع کنید، و اولین اتوماسیون هوشمند خود را در چند ساعت بسازید.</p>
+    <div class="hero-cta">
+      <a href="contact.html" class="btn btn-primary">مشاوره رایگان مسیر یادگیری</a>
+      <a href="#tools" class="btn btn-outline">مقایسه ابزارها</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    <h2 class="section-title">پاسخ کوتاه: با یک ابزار No-Code شروع کنید، نه با تئوری</h2>
+    <p>اگر فقط یک جمله می‌خواهید: <strong>برای یادگیری اتوماسیون با هوش مصنوعی، یک ابزار No-Code مثل Make یا n8n انتخاب کنید و با یک پروژه ساده (مثل خلاصه‌سازی ایمیل با AI) شروع کنید. دوره Quickstart رایگان n8n در ۳ تا ۵ ساعت شما را به اولین Workflow می‌رساند.</strong></p>
+    <p>در این راهنما، اول ۳ ابزار اصلی را مقایسه می‌کنیم، بعد نقشه راه یادگیری گام‌به‌گام را می‌بینید، و در پایان ۳ پروژه عملی برای شروع معرفی می‌شود.</p>
+    <p><em>آخرین به‌روزرسانی: ۱۲ آبان ۱۴۰۵</em></p>
+
+    <div class="author-box">
+      <img src="logo.png" alt="علیرضا محمّدی جعفری" width="48" height="48">
+      <div>
+        <strong>علیرضا محمّدی جعفری</strong>
+        <p>مدیر محصول و مشاور اتوماسیون با بیش از ۵ سال تجربه. این راهنما بر اساس تجربه واقعی در پروژه‌های اتوماسیون نوشته شده است. <a href="about.html">درباره من</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="tools">
+  <div class="container">
+    <h2 class="section-title">مقایسه ۳ ابزار اصلی اتوماسیون با هوش مصنوعی</h2>
+    <p class="section-sub">کدام برای شما مناسب است؟</p>
+    <div class="table-wrap">
+      <table class="compare">
+        <thead>
+          <tr><th>ابزار</th><th>مناسب برای</th><th>مزیت کلیدی</th><th>چالش برای کاربر ایرانی</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>n8n</strong></td>
+            <td>کسی که می‌خواهد رایگان و روی سرور خودش کار کند</td>
+            <td>متن‌باز و رایگان (Community Edition)، قابل نصب روی سرور شخصی، بدون نیاز به دور زدن تحریم</td>
+            <td>رابط کاربری کمی فنی‌تر از Make</td>
+          </tr>
+          <tr>
+            <td><strong>Make</strong></td>
+            <td>مبتدی که می‌خواهد سریع و بصری شروع کند</td>
+            <td>رابط Drag & Drop ساده‌تر، پلن رایگان، اتصال به ۱۰۰۰+ سرویس</td>
+            <td>نسخه رایگان محدودیت اجرا دارد</td>
+          </tr>
+          <tr>
+            <td><strong>Power Automate</strong></td>
+            <td>کسی که در اکوسیستم مایکروسافت (Office 365) کار می‌کند</td>
+            <td>اتصال بومی به Outlook، Excel، Teams، SharePoint</td>
+            <td>نیاز به اشتراک مایکروسافت، ممکن است برای ایرانی گران/دشوار باشد</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tagline">توصیه برای شروع: اگر در ایران هستید و می‌خواهید هزینه صفر داشته باشید، n8n را روی سیستم خودتان نصب کنید. اگر می‌خواهید سریع نتیجه ببینید، Make را امتحان کنید.</p>
+  </div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="container narrow">
+    <h2 class="section-title">نقشه راه یادگیری (۴ گام)</h2>
+    <ol class="steps">
+      <li><strong>گام ۱: آشنایی با مفاهیم پایه:</strong> Trigger (محرک)، Action (عمل)، Workflow (جریان کاری). یک دوره Quickstart رایگان (مثل n8n) در ۳ تا ۵ ساعت این‌ها را پوشش می‌دهد.</li>
+      <li><strong>گام ۲: ساخت اولین Workflow ساده:</strong> یک Trigger (مثلاً ایمیل جدید) + یک Action (مثلاً ارسال به تلگرام). بدون AI شروع کنید تا منطق جریان را بفهمید.</li>
+      <li><strong>گام ۳: افزودن هوش مصنوعی:</strong> یک نود AI (مثل OpenAI، Gemini یا Claude) به Workflow اضافه کنید. مثلاً: ایمیل را بگیر، با AI خلاصه کن، خلاصه را به تلگرام بفرست.</li>
+      <li><strong>گام ۴: ساخت AI Agent (اختیاری):</strong> بعد از تسلط بر Workflow ساده، یک Agent با حافظه و ابزار بسازید که بتواند تصمیم بگیرد و چند مرحله را خودش انجام دهد.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">۳ پروژه عملی برای شروع (از ساده به پیشرفته)</h2>
+    <div class="grid grid-3">
+
+      <div class="card">
+        <h3>📧 پروژه ۱: خلاصه‌ساز ایمیل با AI</h3>
+        <p class="pkg-desc">سطح: مبتدی | زمان: ۱-۲ ساعت</p>
+        <p>ایمیل جدید دریافت کن → با AI خلاصه کن → خلاصه را به تلگرام بفرست. این پروژه پایه‌ای‌ترین و کاربردی‌ترین شروع است.</p>
+      </div>
+
+      <div class="card featured">
+        <h3>💬 پروژه ۲: پاسخ‌گوی هوشمند مشتری</h3>
+        <p class="pkg-desc">سطح: متوسط | زمان: ۳-۴ ساعت</p>
+        <p>پیام مشتری از فرم/تلگرام دریافت کن → AI دسته‌بندی و پاسخ اولیه بنویسد → موارد پیچیده را به انسان ارجاع بده. این پروژه مستقیماً به کسب‌وکار ارزش می‌دهد.</p>
+      </div>
+
+      <div class="card">
+        <h3>📊 پروژه ۳: گزارش‌گیر خودکار فروش</h3>
+        <p class="pkg-desc">سطح: متوسط | زمان: ۲-۳ ساعت</p>
+        <p>داده فروش از Google Sheets دریافت کن → AI تحلیل و خلاصه بنویسد → گزارش را به ایمیل/تلگرام بفرست. برای مدیران بسیار کاربردی است.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    <h2 class="section-title">یک نکته مهم قبل از شروع</h2>
+    <p>بسیاری از افراد قبل از اینکه فرآیند فعلی خود را بشناسند، سراغ اتوماسیون می‌روند. <strong>اتوماسیون یک فرآیند اشتباه، فقط باعث می‌شود اشتباهات سریع‌تر اتفاق بیفتند</strong>.</p>
+    <p>قبل از هر اتوماسیونی، این سه سؤال را بپرسید:</p>
+    <ul class="mistakes">
+      <li><strong>این فرآیند واقعاً تکراری است؟</strong> اگر هر بار متفاوت است، اتوماسیون سخت می‌شود.</li>
+      <li><strong>داده‌ها کجا هستند و ساختار دارند؟</strong> AI به داده باکیفیت نیاز دارد.</li>
+      <li><strong>خروجی مورد انتظار چیست؟</strong> یک Workflow بدون هدف مشخص، فقط پیچیدگی اضافه می‌کند.</li>
+    </ul>
+    <p><a href="what-is-ai-automation.html">اتوماسیون با هوش مصنوعی چیست</a> و <a href="ai-business-automation.html">اتوماسیون کسب‌وکار با هوش مصنوعی</a> را ببینید — تفاوت با RPA و ۵ مثال واقعی.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <h2 class="section-title">سؤالات متداول درباره آموزش اتوماسیون با هوش مصنوعی</h2>
+    <div class="faq">
+      <details><summary>برای آموزش اتوماسیون با هوش مصنوعی از کجا شروع کنم؟</summary><p>با یک ابزار No-Code مثل Make یا n8n شروع کنید. دوره Quickstart رایگان n8n در ۳ تا ۵ ساعت شما را از صفر به ساخت اولین Workflow و AI Agent می‌رساند. برای شروع، نیازی به برنامه‌نویسی نیست.</p></details>
+      <details><summary>بهترین ابزار برای یادگیری اتوماسیون هوشمند کدام است؟</summary><p>اگر در ایران هستید و می‌خواهید رایگان و روی سرور خودتان کار کنید: n8n (متن‌باز و رایگان). اگر می‌خواهید سریع و بدون پیچیدگی شروع کنید: Make (رابط بصری ساده‌تر). اگر در اکوسیستم مایکروسافت هستید: Power Automate.</p></details>
+      <details><summary>آیا برای اتوماسیون با هوش مصنوعی باید برنامه‌نویسی بلد باشم؟</summary><p>خیر. ابزارهای No-Code مثل Make و n8n امکان ساخت Workflow با کشیدن و رها کردن (Drag & Drop) را می‌دهند. البته آشنایی پایه با API و JSON کمک‌کننده است، اما اجباری نیست.</p></details>
+      <details><summary>اولین پروژه اتوماسیون هوشمند چه چیزی باشد؟</summary><p>یک پروژه ساده و کاربردی انتخاب کنید: ۱) خلاصه‌سازی خودکار ایمیل‌ها با AI و ارسال به تلگرام ۲) دسته‌بندی پیام‌های مشتری و پاسخ خودکار ۳) تولید گزارش فروش از Google Sheets با تحلیل AI. این پروژه‌ها در چند ساعت قابل ساخت هستند.</p></details>
+      <details><summary>چقدر زمان می‌برد تا بتوانم اتوماسیون هوشمند بسازم؟</summary><p>با یک دوره Quickstart مثل n8n (۳ تا ۵ ساعت)، می‌توانید اولین Workflow ساده و حتی یک AI Agent پایه بسازید. برای تسلط بر پروژه‌های پیچیده‌تر، معمولاً ۲ تا ۴ هفته تمرین منظم کافی است.</p></details>
+      <details><summary>آیا اتوماسیون هوشمند برای کسب‌وکار کوچک هم ارزش دارد؟</summary><p>بله. اتوماسیون کارهای تکراری (پاسخ به مشتری، پیگیری سفارش، گزارش‌گیری) زمان شما را آزاد می‌کند و خطا را کاهش می‌دهد. با n8n رایگان یا Make پلن رایگان می‌توانید بدون هزینه شروع کنید.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <h2>می‌خواهید مسیر یادگیری اختصاصی خود را پیدا کنید؟</h2>
+    <p>در جلسه ۳۰ دقیقه‌ای رایگان، ابزار و پروژه مناسب سطح شما را مشخص می‌کنیم. <a href="services.html" style="color:#fff;text-decoration:underline;">خدمات خودکار</a> را هم ببینید.</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">رزرو جلسه رایگان</a>
+    <p class="phone">📞 <a href="tel:+989124917822">۰۹۱۲۴۹۱۷۸۲۲</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <h4>خودکار</h4>
+      <p>شریک اجرایی شما برای رسیدن به اولین درآمد.</p>
+    </div>
+    <div>
+      <h4>لینک‌های اصلی</h4>
+      <ul>
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="services.html">خدمات</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="contact.html">تماس</a></li>
+        <li><a href="ai-course-price.html">قیمت دوره هوش مصنوعی</a></li>
+        <li><a href="what-is-ai-automation.html">اتوماسیون با هوش مصنوعی چیست</a></li>
+        <li><a href="ai-business-automation.html">اتوماسیون کسب‌وکار</a></li>
+        <li><a href="sitemap.html">همه صفحات</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>تماس</h4>
+      <p>📞 <a href="tel:+989124917822">۰۹۱۲۴۹۱۷۸۲۲</a></p>
+      <p>🌐 <a href="https://khodkar.hsc-co.ir/">khodkar.hsc-co.ir</a></p>
+    </div>
+  </div>
+  <div class="copyright">© <span id="year"></span> خودکار — علیرضا محمّدی جعفری.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
